@@ -4,10 +4,10 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 // https://vitepress.dev/reference/default-theme-config
 export default defineConfig({
-  base: "/docs-myBlog/",
+  base: "/myBlog/",
   title: "无敌大头",
   description: "A VitePress Site", // 给SEO用的(不改)
-  head: [["link", { rel: "icon", href: "/docs-myBlog/logo.svg" }]],
+  head: [["link", { rel: "icon", href: "/myBlog/logo.svg" }]],
   themeConfig: {
     logo: "/public/logo.svg",
 
