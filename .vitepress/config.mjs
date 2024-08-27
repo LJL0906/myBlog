@@ -1,15 +1,15 @@
 import { defineConfig } from "vitepress";
-// import { set_sidebar } from "./utils/auto-gen-sidebar.mjs";	// 改成自己的路径
+// import { set_sidebar } from "../utils/auto-gen-sidebar.mjs"; // 改成自己的路径
 
 // https://vitepress.dev/reference/site-config
 // https://vitepress.dev/reference/default-theme-config
 export default defineConfig({
-  // base: "/myBlog/",
+  base: "/myBlog/",
   title: "无敌大头",
   description: "A VitePress Site", // 给SEO用的(不改)
-  head: [["link", { rel: "icon", href: "/logo.svg" }]],
+  head: [["link", { rel: "icon", href: "/myBlog/blog.svg" }]],
   themeConfig: {
-    logo: "/logo.svg",
+    logo: "/blog.svg",
 
     // 导航栏
     nav: [
@@ -31,14 +31,18 @@ export default defineConfig({
           {
             items: [
               {
-                text: "JS",
-                link: "/JavaScript",
+                text: "JS基础",
+                link: "/JavascriptMD/js",
               },
               {
-                text: "TS",
-                link: "/typeScript",
+                text: "JS高级",
+                link: "/JavascriptMD/js-high",
               },
             ],
+          },
+          {
+            text: "TS",
+            link: "/typeScript",
           },
         ],
       },
@@ -141,35 +145,46 @@ export default defineConfig({
       },
     },
 
+    sidebar: [
+      {
+        text: "JavaScript",
+        items: [
+          {
+            text: "初始js",
+            link: "/JavascriptMD/js",
+          },
+          {
+            text: "变量",
+            items: [
+              {
+                text: "变量声明",
+                link: "/JavascriptMD/js",
+              },
+              {
+                text: "变量作用域",
+                link: "/JavascriptMD/js",
+              },
+            ],
+          },
+          {
+            text: "数组",
+            link: "/JavascriptMD/js",
+          },
+          {
+            text: "对象",
+            link: "/JavascriptMD/js",
+          },
+          {
+            text: "函数",
+            link: "/JavascriptMD/js",
+          },
+        ],
+      },
+    ],
+
     // 侧边栏
-    /*  sidebar: [
-      {
-        text: "Examples",
-        items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
-        ],
-      },
-      {
-        text: "Examples",
-        items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
-        ],
-      },
-      {
-        text: "Examples",
-        items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
-        ],
-      },
-    ], */
-
-    sidebar: false, // 关闭侧边栏
-    aside: "left", // 设置右侧侧边栏在左侧显示
-
-    // sidebar: { "/front-end/vue": set_sidebar("front-end/vue") },
+    // sidebar: false, // 关闭侧边栏
+    // aside: "left", // 设置右侧侧边栏在左侧显示
 
     // 文章右侧目录
     outline: {
