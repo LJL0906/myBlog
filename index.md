@@ -6,7 +6,7 @@ hero:
   name: "无敌大头的文档"
   text: "进度很慢，结果很棒！"
   tagline: 持续学习，持续进步
-  image: "/public/myPass.svg"
+  image: "/myPass.svg"
   actions:
     - theme: brand
       text: 大头 启动！

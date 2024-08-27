@@ -9,7 +9,7 @@ export default defineConfig({
   description: "A VitePress Site", // 给SEO用的(不改)
   head: [["link", { rel: "icon", href: "/myBlog/logo.svg" }]],
   themeConfig: {
-    logo: "/public/logo.svg",
+    logo: "/logo.svg",
 
     // 导航栏
     nav: [
