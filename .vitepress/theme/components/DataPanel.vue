@@ -9,7 +9,7 @@
           本站总访问量
           <span id="busuanzi_value_site_pv" class="font-bold">--</span> 次
         </span>
-        <img src="../../../public/myPass.svg" alt="heart" width="100" height="100" />
+        <img src="/myPass.svg" alt="heart" width="100" height="100" />
         <span class="text">
           本站访客数
           <span id="busuanzi_value_site_uv" class="font-bold">--</span> 人次
