@@ -170,3 +170,7 @@
   /* border-color: #f43f5e; */
   border-color: var(--vp-c-red-2);
 }
+
+.VPSidebarItem .text {
+  font-size: 18px;
+}

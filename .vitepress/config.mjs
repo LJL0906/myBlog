@@ -1,5 +1,5 @@
 import { defineConfig } from "vitepress";
-// import { set_sidebar } from "../utils/auto-gen-sidebar.mjs"; // 改成自己的路径
+import { set_sidebar } from "../utils/auto-gen-sidebar.mjs"; // 改成自己的路径
 
 // https://vitepress.dev/reference/site-config
 // https://vitepress.dev/reference/default-theme-config
@@ -8,7 +8,14 @@ export default defineConfig({
   title: "无敌大头",
   description: "博客 前端 程序员 vue react js css html 知识点 笔记 文档", // 给SEO用的(不改)
   head: [
-    ["meta", { name: "keywords", content: "VitePress, 技术文档, 博客, 前端,程序员,vue,react,js,css,html,知识点,笔记,文档" }],
+    [
+      "meta",
+      {
+        name: "keywords",
+        content:
+          "VitePress, 技术文档, 博客, 前端,程序员,vue,react,js,css,html,知识点,笔记,文档",
+      },
+    ],
     ["link", { rel: "icon", href: "/blog.svg" }],
   ],
   themeConfig: {
@@ -122,42 +129,22 @@ export default defineConfig({
       },
     },
 
-    sidebar: [
-      {
-        text: "JavaScript",
-        items: [
-          {
-            text: "初始js",
-            link: "/JavascriptMD/js",
-          },
-          {
-            text: "变量",
-            items: [
-              {
-                text: "变量声明",
-                link: "/JavascriptMD/js",
-              },
-              {
-                text: "变量作用域",
-                link: "/JavascriptMD/js",
-              },
-            ],
-          },
-          {
-            text: "数组",
-            link: "/JavascriptMD/js",
-          },
-          {
-            text: "对象",
-            link: "/JavascriptMD/js",
-          },
-          {
-            text: "函数",
-            link: "/JavascriptMD/js",
-          },
-        ],
-      },
-    ],
+    sidebar: {
+      "/htmlMd": set_sidebar("htmlMd"),
+      "/algorithm": set_sidebar("algorithm"),
+      "/cssMd": set_sidebar("cssMd"),
+      "/designPattern": set_sidebar("designPattern"),
+      "/gBaseMd": set_sidebar("gBaseMd"),
+      "/JavascriptMd": set_sidebar("JavascriptMd"),
+      "/nodeMd": set_sidebar("nodeMd"),
+      "/reactMd": set_sidebar("reactMd"),
+      "/toolsMd": set_sidebar("toolsMd"),
+      "/typeScriptMd": set_sidebar("typeScriptMd"),
+      "/uiMd": set_sidebar("uiMd"),
+      "/viteMd": set_sidebar("viteMd"),
+      "/vueMd": set_sidebar("vueMd"),
+      "/webpackMd": set_sidebar("webpackMd"),
+    },
 
     // 侧边栏
     // sidebar: false, // 关闭侧边栏
