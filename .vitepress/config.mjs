@@ -6,8 +6,11 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   base: "/",
   title: "无敌大头",
-  description: "A VitePress Site", // 给SEO用的(不改)
-  head: [["link", { rel: "icon", href: "/blog.svg" }]],
+  description: "博客 前端 程序员 vue react js css html 知识点 笔记 文档", // 给SEO用的(不改)
+  head: [
+    ["meta", { name: "keywords", content: "VitePress, 技术文档, 博客, 前端,程序员,vue,react,js,css,html,知识点,笔记,文档" }],
+    ["link", { rel: "icon", href: "/blog.svg" }],
+  ],
   themeConfig: {
     logo: "/blog.svg",
 
