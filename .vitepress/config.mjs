@@ -42,11 +42,11 @@ export default defineConfig({
             items: [
               {
                 text: "JS基础",
-                link: "/JavascriptMD/js",
+                link: "/JavascriptMD/JS基础.md",
               },
               {
                 text: "JS高级",
-                link: "/JavascriptMD/js-high",
+                link: "/JavascriptMD/JS高级.md",
               },
             ],
           },

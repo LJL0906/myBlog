@@ -6,11 +6,11 @@ hero:
   name: "无敌大头的文档"
   text: "进度很慢，结果很棒！"
   tagline: 持续学习，持续进步
-  image: "/myPass.svg"
+  image: "/datas.svg"
   actions:
     - theme: brand
       text: 学习->启动
-      link: /markdown-examples
+      link: /htmlMd/html.md
 
 features:
   - title: HTML ❥(^_-)
@@ -20,6 +20,5 @@ features:
   - title: JavaScript ❥(^_-)
     details: JavaScript 是一种多范式的动态语言，它包含类型、运算符、标准内置（built-in）对象和方法。它的语法来源于 Java 和 C，所以这两种语言的许多语法特性同样适用于 JavaScript。JavaScript 通过原型链而不是类来支持面向对象编程（有关 ES6 类的内容参考这里Classes，有关对象原型参考见此继承与原型链）。JavaScript 同样支持函数式编程——因为它们也是对象，函数也可以被保存在变量中，并且像其他对象一样被传递。
 ---
+
 <DataPanel />
-
-
